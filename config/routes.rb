@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  resources :comments
+  resources :comments, only: []
 
-  resources :likes
+  resources :likes, only: []
 
-  resources :songs
+  resources :songs, only: []
+
+  root 'songs#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

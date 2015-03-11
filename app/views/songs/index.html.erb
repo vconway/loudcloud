@@ -1,0 +1,7 @@
+<h2> Loudcloud </h2>
+
+<% controller.songs.each do |song| %>
+
+	<h3><%= song.title %></h3>
+	<%= song.embed_code.html_safe %>
+	<% end %>
